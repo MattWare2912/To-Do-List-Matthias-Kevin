@@ -1,1 +1,22 @@
 
+
+body { 
+    font-family :Arial, Helvetica, sans-serif;
+    margin : auto;
+    padding : 20px;
+    max-width : 600px;
+    background-color : turquoise;
+
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #d33;
+  font-size: 18px;
+}
+.delete-btn:hover {
+  color: red;
+}
+
