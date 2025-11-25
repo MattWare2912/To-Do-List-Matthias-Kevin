@@ -1,1 +1,153 @@
+@font-face {
+    font-family: BungeeSpice-Regular;
+    src: url(./BungeeSpice-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
 
+body {
+    font-family: BungeeSpice-Regular;
+    background-image: url("programmerhumor-io-java-memes-javascript-memes-79d08b65fcff178.png");
+    background-size: 900px;
+    background-repeat: no-repeat;
+    background-position-y: top;
+    background-position-x: left;
+    
+      
+}
+
+h1 {
+    text-align: center;
+}
+
+.Principal {
+    max-width: 500px;
+    margin: auto;
+    display: block; 
+}
+
+
+.task-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #C0C0C0;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+  animation: fadeIn 0.3s ease forwards;
+  margin: 5px;
+}
+
+
+
+#Liste {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.task-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+
+.add-task input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  background: transparent;
+  
+  
+}
+
+.add-task button {
+  background: #50b959;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.add-task button:hover {
+  background: #0056b3;
+}
+
+
+.delete-btn {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  margin-left: 5px;
+  
+}
+
+.delete-btn:hover {
+  background: #a71d2a;
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; transform: translateX(0); }
+  to { opacity: 0; transform: translateX(50px); }
+}
+
+.removing {
+  animation: fadeOut 0.3s ease forwards;
+}
+
+@media (max-width: 600px) {
+  .Principal {
+    padding: 10px;
+  }
+  .add-task button {
+    padding: 5px;
+  }
+}
+
+.edit-btn {
+  background: #ffc107;
+  color: black;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  
+}
+
+.edit-btn:hover {
+  background: #e0a800;
+}
+
+.add-task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #C0C0C0;   /* même fond que .task-card */
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+  margin: 10px auto;     /* centré sous le titre */
+  max-width: 500px;
+  width: 100%;
+}
